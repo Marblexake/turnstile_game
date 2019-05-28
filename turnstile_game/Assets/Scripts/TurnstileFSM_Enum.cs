@@ -41,23 +41,6 @@ public class TurnstileFSM_Enum : MonoBehaviour
 
     }
 
-    void stateLocked()
-    {
-        if (checkCoin())
-        {
-            releaseTurnstile();
-            state = StateEnum.unlocked;
-        }
-    }
-
-    void stateUnlocked()
-    {
-        if (checkPush())
-        {
-            pushTurnstile();
-            state = StateEnum.locked;
-        }
-    }
 
     bool checkCoin()
     {
@@ -84,6 +67,6 @@ public class TurnstileFSM_Enum : MonoBehaviour
 
     void releaseTurnstile()
     {
-        Debug.Log("Turnstile unlocked!");
+        Debug.Log("You have inserted a coin! Turnstile unlocked!");
     }
 }

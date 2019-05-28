@@ -9,7 +9,6 @@ public class TurnstileFSM : MonoBehaviour
     void Start()
     {
         state = "locked";
-
     }
 
     void Update()

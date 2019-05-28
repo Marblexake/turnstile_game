@@ -21,7 +21,11 @@ public class TurnstileUnlockedState : TurnstileState {
             pushTurnstile();
             newState = new TurnstileLockedState(m_turnstile);
         }
-
+        else
+        {
+            Debug.Log("Please push the turnstile.");
+            newState = new TurnstileUnlockedState(m_turnstile);
+        }
         m_turnstile.ChangeState(newState);
 
     }

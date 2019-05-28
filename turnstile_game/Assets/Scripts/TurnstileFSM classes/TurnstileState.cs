@@ -6,7 +6,6 @@ public abstract class TurnstileState {
     protected TurnstileFSMClass m_turnstile = null;
     protected TurnstileState newState = null;
 
-
 	public virtual void Enter()
     {
 
